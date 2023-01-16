@@ -34,6 +34,21 @@ font-family: 'Sarala', sans-serif;
         display: flex;
         gap: 32px;
     }
+
+    header ul {
+        list-style-type: none;
+        align-self: center;
+    }
+
+    header li {
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #menu {
+        display: none;
+    }
     
     header img {
         height: 72px;
@@ -145,15 +160,80 @@ font-family: 'Sarala', sans-serif;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 700px) and (max-width: 992px) {
+    
+    .conteudo-principal-imagem {
+        height: 330px;
+    }
+    
+    .conteudo-principal-escrito-titulo {
+        font-size: 60px;
+        align-self: center;
+    }
+
+    .conteudo-principal-escrito-paragrafo {
+        text-align: center;
+        width: 320px;
+        font-size: 23px;
+    }
+
+    .conteudo-principal-escrito-botao {
+        align-self: center;
+    }
+    
+    .conteudo-secundario-paragrafo {
+        width: 350px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
 
     header {
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 0px;
+        flex-direction: column;
     }
 
     header nav {
         gap: 22px;
+        display: flex;
+    }
+
+    #menu {
+        margin-top: 20px;
+        display: block;
+        background-color: #2F2325;
+        width: 250px;
+        color: #ECD6C4;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+        border: 0;
+        border-bottom: 0.3px solid #8e5d52a9;
+    }
+
+    #menu:hover {
+        background-color: #1f1718;
+    }
+
+    header ul {
+        list-style-type: none;
+        background-color: #2F2325;
+        width: 250px;
+        display: none;
+    }
+
+
+    header li {
+        display: block;
+        border: 0.3px solid #8e5d52a9;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header li:hover {
+        background-color: #1f1718;
     }
 
     .link-menu {
@@ -176,7 +256,7 @@ font-family: 'Sarala', sans-serif;
         font-size: 17px;
         text-align: center;
         padding: 0 10px;
-        width: 260px;
+        width: 250px;
     }
 
     .conteudo-principal-escrito-botao {
@@ -213,8 +293,8 @@ font-family: 'Sarala', sans-serif;
 
     .conteudo-secundario-paragrafo {
         text-align: center;
-        max-width: 280px;
-        font-size: 14px;
+        max-width: 230px;
+        font-size: 15px;
     }
 
     footer img {
