@@ -52,6 +52,7 @@ font-family: 'Sarala', sans-serif;
     
     header img {
         height: 72px;
+        object-fit: cover;
     }
     
     header a {
